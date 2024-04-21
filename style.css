@@ -1,0 +1,110 @@
+*{ 
+Margin:0;
+Padding:0;
+Box-sizing: border-box;
+Font-family: Gilroy;
+color: white
+}
+
+html,body{
+Width:100%;
+Height:100%;
+}
+
+#main{
+    height: 85%;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    padding: 5vw 10vw;
+}
+
+#right{
+    height: 100%;
+    width: 45%;
+    background-color: #333;
+}
+
+#left{
+    height:100%;
+    width:35vw;
+    background-size:cover;
+ 
+}
+
+
+#right{
+    width:55%;
+    padding: 0 2.5vw;
+    background-color: #111;
+}
+
+#right h3{
+    font-size: 3.5vw;
+}
+
+#all-songs{
+    height: 85%;
+    margin-top: 1vw;
+    
+}
+
+.song-card{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    border-top: 1px solid white;
+    padding:1.5vw 1vw;
+}
+
+.song-card:hover{
+    background-color: #464444af;
+}
+
+.song-card:nth-last-child(1){
+    border-bottom: 1px solid white;
+}
+
+
+#part1{
+    display: flex;
+    align-items: center;
+    font-size: 1.3vw;
+    gap:0.8vw;
+    pointer-events: none;
+    /* new property here which uniformall the pointer events and give one output even if we tage other blank as well as tag in the selected area */
+}
+
+
+#part1 img{
+    height: 60px;
+    width:60px;
+    object-fit:fill;
+    object-position: center;
+}
+
+
+#player{
+    height: 15%;
+    width:100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8vw;
+
+}
+
+#player h3{
+    padding: 1vw;
+    border-radius: 50%;
+    background-color:#333;
+}
+
+#player h3 i{
+    font-size: 1vw;
+}
+
+#player h3:active{
+    scale:0.9
+}
